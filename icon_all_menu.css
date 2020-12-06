@@ -1,0 +1,577 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ .menu1{
+     margin: 0px auto;
+     height: 20px;
+     background-color: rgb(134, 132, 133);
+     width:100%;
+
+ }
+.menu1 ul{
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    margin-right:150px;
+}
+.menu1 ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+.menu1 ul li a{
+    text-decoration:none;
+    padding: 0px 50px;
+    color: rgba(245, 200, 182, 0.938);
+    font-size:13px; 
+    line-height: 20px;
+}
+.menu1 ul li:hover{
+    background-color: rgba(238, 227, 198, 0.781);
+    transition: 1s;
+}
+.menu1 ul li a:hover{
+    color: rgb(104, 5, 5);
+}
+.menu2{
+    height: 40px;
+    background-color: rgb(247, 234, 201);
+    width:100%;
+}
+
+.menu2 ul li{
+    display:inline-block;
+    padding: 0px 80px;
+}
+.menu2 ul li .logo1{
+    height:40px;
+    width:100px;
+   position: absolute;
+    top:20px
+}
+.menu2 ul li .logo1:hover {
+    transform: scaleX(1.6);
+    transition: 1s;
+}
+.menu2 ul li .logo2{
+    height:40px;
+    width:200px;
+    position: absolute;
+    top:20px
+}
+.menu2 ul li .logo2:hover {
+    transform: scaleX(1.3);
+    transition: 1s;
+}
+.menu2 ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial;
+    line-height: 40px;
+    color: rgb(61, 61, 52);
+}
+.menu2 ul li:hover{
+    background-color: rgb(78, 78, 69);
+    transition: 1s;
+    
+}
+.menu2 ul li a:hover{
+    color:rgb(226, 231, 245);
+    font-size: 15px;
+    font-style:inherit;
+    transition: 1s;
+}
+.menu3{
+    margin: 0px auto;
+}
+
+.menu3 nav{
+    height: 50px;
+    background:#5e7437;
+}
+.icon1{
+    padding: 0px 0 0 80px;
+    width: 70px;
+    height: 50px;
+}
+
+.menu3 nav ul{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    margin-right: auto;
+}
+.menu3 nav ul li{
+    background:#5e7437;
+    position: relative;
+    list-style: none;
+    display:inline-block;
+    z-index: 1;
+}
+.menu3 nav ul li a{
+    padding: 0 12px;
+    color:white;
+    text-decoration: none;
+    line-height: 50px;
+    font-style:arial;
+    font-size: 15px;
+}
+.menu3 nav ul li:hover{
+    background: #888888;
+    transform: scaleX(1.1); 
+    transition: 0.5s;
+}
+nav ul ul{
+    position: absolute;
+    top:50px;
+    display:none;
+}
+nav ul li:hover > ul{
+    display:block;
+}
+nav ul ul li{
+width:150px;
+float:none;
+display: list-item;
+position: relative;
+}
+/* các box  */
+.main_tab{
+    margin: 20px auto;
+    position: relative;
+    width:1000px;
+    min-height: 1200px;
+    background-color: rgb(124, 124, 64); 
+}
+/* các box bên trái */
+.main_tab_left{
+    width: 700px;
+    height: 1200px;
+    background-color: rgb(235, 132, 132);
+    position: absolute;
+    left: 0px;
+    top:0px;
+    float: left;
+}
+/* hai menu của box bên trái */
+.main_tab_left .menu_tab1{
+    width:100%;
+    height: 40px;
+    background-color: rgb(129, 61, 61);
+}
+.main_tab_left .menu_tab1 ul{
+    margin: 0px;
+    padding: 0px;
+}
+.main_tab_left .menu_tab1 ul li{
+    float: left;
+    display: inline;
+    margin-left: 5px;
+    list-style: none;
+    border-left: 3px solid
+}
+.main_tab_left .menu_tab1 ul li a{
+    line-height: 40px;
+    text-decoration: none;
+}
+.main_tab_left .menu_tab2{
+    background-color: rgb(74, 179, 74);
+    width:85%;
+    height: 25px;
+}
+.main_tab_left .menu_tab2 ul{
+    margin: 0px;
+    padding: 0px;
+}
+.main_tab_left .menu_tab2 ul li{
+    list-style: none;
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    background-color: mediumpurple;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0px 3px;
+}
+.main_tab_left .menu_tab2 ul li a{
+    text-decoration: none;
+    line-height: 25px;
+}
+/* box chứa 3 hộp đầu tiên của main_ left chứa tin tức nổi bật nhất */
+.main_tab_left .tab_new{
+    position: relative;
+}
+.main_tab_left .tab_new1{
+    width: 60%;
+    height: 380px;
+    background-color: maroon;
+    position: absolute;
+    float: left;
+    top:0px;
+    left: 0px;
+}
+.main_tab_left .tab_new2{
+    width: 40%;
+    height: 190px;
+    background-color: rgb(185, 98, 98);
+    position: absolute;
+    float: left;
+    top: 0px;
+    right: 0px;
+}
+/* các box tin tức còn lại của main_left */
+.main_tab_left .tab_new3{
+    width: 40%;
+    height: 190px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    float: left;
+    top:190px;
+    right: 0px;
+}
+.main_tab_left .tab_new4{
+    width: 40%;
+    height: 150px;
+    background-color: rgb(34, 4, 4);
+    position: absolute;
+    float: left;
+    top:400px;
+    right: 30px;
+}
+.main_tab_left .tab_new5{
+    width: 40%;
+    height: 150px;
+    background-color: rgb(34, 4, 4);
+    position: absolute;
+    float: left;
+    top:400px;
+    left: 30px;
+}
+.main_tab_left .tab_new6{
+    width: 40%;
+    height: 150px;
+    background-color: rgb(34, 4, 4);
+    position: absolute;
+    float: left;
+    top:600px;
+    right: 30px;
+}
+.main_tab_left .tab_new7{
+    width: 40%;
+    height: 150px;
+    background-color: rgb(34, 4, 4);
+    position: absolute;
+    float: left;
+    top:600px;
+    left: 30px;
+}.main_tab_left .tab_new8{
+    width: 40%;
+    height: 150px;
+    background-color: rgb(34, 4, 4);
+    position: absolute;
+    float: left;
+    top:800px;
+    right: 30px;
+}
+.main_tab_left .tab_new9{
+    width: 40%;
+    height: 150px;
+    background-color: rgb(34, 4, 4);
+    position: absolute;
+    float: left;
+    top:800px;
+    left: 30px;
+}
+/* định dạng các thẻ p và h trong các box */
+.main_tab_left .tab_new p{
+    margin: 280px 0px;
+    text-indent: 12px;
+    color: rgb(80, 69, 63);
+    font-size: 15px;
+}
+.main_tab_left .tab_new p:hover{
+    color:white;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.main_tab_left .tab_new a{
+    text-decoration: none;
+    color: rgb(80, 69, 63);
+    font-size: 14px;
+}
+.main_tab_left .tab_new a:hover{
+    color:white;
+    font-size: 19px;
+    transition: 0.5s;
+} 
+/* các box còn lại bên phải đa số chưá các menu và tin tức của các mục khác */
+.main_tab_right1{ /*có thể dành bõx này chứa quảng cáo */
+    width:300px;
+    height: 500px;
+    background-color: rgb(94, 23, 23);
+    position: absolute;
+    top:0px;
+    right: 0px;
+    float: left;
+}
+/* kể tưf đây chứa các nôij dung cần thiết nêu trên */
+.main_tab_right3{
+    width:250px;
+    height: 30px;
+    background-color: rgb(209, 37, 37);
+    position: absolute;
+    top:500px;
+    right: 0px;
+    float: left;
+    display:flex;
+    padding: 5px;
+}
+.main_tab_right3 .item{
+    flex-basis: 200px;
+    background-color: lightblue;
+    margin: 5px;    
+}
+.main_tab_right3 .item:hover{
+    background-color: lightcoral;
+}
+.main_tab_right2{
+    width:300px;
+    height: 500px;
+    background-color: rgb(63, 17, 17);
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+    float: left;
+}
+.main_tab_right2 .tab_new10{
+    width:250px;
+    height: 100px;
+    background-color: rgb(173, 66, 66);
+    position: absolute;
+    top:0px;
+    left: 0px;
+    float: left;
+}
+.main_tab_right2 .tab_new12{
+    width:250px;
+    height: 100px;
+    background-color: rgb(19, 12, 12);
+    position: absolute;
+    top:110px;
+    left: 0px;
+    float: left;
+}
+.main_tab_right2 .tab_new13{
+    width:250px;
+    height: 100px;
+    background-color: rgb(19, 12, 12);
+    position: absolute;
+    top:220px;
+    left: 0px;
+    float: left;
+}
+.main_tab_right2 .tab_new14{
+    width:250px;
+    height: 100px;
+    background-color: rgb(19, 12, 12);
+    position: absolute;
+    top:330px;
+    left: 0px;
+    float: left;
+}
+
+.lastmenu{
+    margin: 0px auto;
+    padding: 0px;
+    height: 30px;
+    background-color: rgb(53, 53, 53);
+}
+.lastmenu ul{
+  padding: 0px;
+  margin: 0px;
+}
+.lastmenu ul li{
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+.lastmenu ul li a{
+    text-decoration: none;
+    line-height: 30px;
+    padding:10px 9px;
+    font-size: 13px;
+    color:rgb(197, 188, 188);
+  
+   
+}
+.lastmenu ul li a:hover{
+    background-color: rgb(211, 222, 226);
+    color: rgb(67, 70, 42);
+    transition: 0.9s;
+}
+.lastbox{
+    height: 200px;
+    background-color:rgb(179, 187, 211);
+    margin: 0 auto;
+}
+.lastbox .myin4{
+  border-bottom: 2px solid #2c3e50;
+  
+}
+/* @mobile */
+.over_lay{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.3);
+    display:none;
+    animation: fadeIn linear 0.2s;  
+}
+.bar_mb_menu{
+        width:35px;
+        height: 35px;
+        position: absolute;
+        top:4px;
+        left:5px;
+        color:rgb(182, 170, 170);
+        display:none;
+    }
+.list_mb{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    width:320px;
+    background-color: rgba(77, 90, 63, 0.9);
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+}
+.list_mb ul{
+margin:0px;
+padding: 0px;
+}
+.list_mb ul li{
+    list-style: none;
+    margin-top: 40px;
+}
+.list_mb ul li a{
+    text-decoration: none;
+    margin-top: 12px;
+    color: white;
+    text-align: center;
+}
+.list_mb ul li a:hover{
+    color: rgb(75, 28, 28);
+    transition: 0.5s;
+}
+.close_list_mb{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:2px;
+    right: 0px;
+    color: rgb(110, 92, 92);
+}
+.close_list_mb:hover{
+    color: rgb(27, 2, 2);
+}
+.open_close:checked ~ .over_lay{
+    display:block;
+}
+.open_close{
+    display:none;
+}
+.open_close:checked ~ .list_mb{
+    transform: translateX(0%);
+  
+}
+.home_mb{
+    width:35px;
+    height:35px;
+    position: absolute;
+    top:10px; 
+    left:100px;
+    display:none;
+    color: khaki;
+}
+.home_mb a{
+    color: rgb(199, 209, 189);
+}
+.mess_mb{
+    width:30px;
+    height:30px;
+    position: absolute;
+    top:10px; 
+    left:150px;
+    display:none;
+    color: khaki;
+}
+.mess_mb a{
+    color: rgb(203, 214, 191);
+}
+.help_mb{
+    width:30px;
+    height:30px;
+    position: absolute;
+    top:10px; 
+    left:190px;
+    display:none;
+    color: khaki;
+}
+.help_mb a{
+    color: rgb(199, 209, 189);
+}
+@media(max-width:1223px){
+    .menu1{
+        display: none;
+    }
+    .menu2{
+        display:none;
+    }
+    .lastmenu{
+           display:none;
+    }
+    .bar_mb_menu{
+        display:block;
+    }
+    .menu3 ul {
+        display:none;
+    }
+    .menu3 .icon1{
+        display:none;
+    }
+    .home_mb{
+        display:block;
+    }
+    .mess_mb{
+        display:block;
+    }
+    .help_mb{
+        display:block;
+    }
+    .muiten{
+        display:none;
+    }
+    .quangcao{
+        display:none;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+    
+    
+
+
